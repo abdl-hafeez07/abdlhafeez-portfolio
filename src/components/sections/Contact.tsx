@@ -8,8 +8,8 @@ import { gsap } from "gsap";
 const socials = [
   {
     name: "Email",
-    url: "mailto:contact@example.com",
-    handle: "contact@me.com",
+    url: "mailto:abdulhafeez0906@gmail.com",
+    handle: "abdulhafeez0906@gmail.com",
     color: "from-blue-500 to-cyan-400",
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

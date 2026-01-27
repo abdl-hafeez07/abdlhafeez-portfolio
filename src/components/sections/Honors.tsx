@@ -130,14 +130,14 @@ export default function Honors() {
     return (
         <section
             ref={containerRef}
-            className="relative py-32 bg-black overflow-hidden perspective-1000"
+            className="relative py-20 md:py-32 bg-black overflow-hidden perspective-1000"
             id="honors"
         >
             {/* Background Atmosphere */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-black to-black opacity-50" />
 
-            <div className="max-w-[1200px] mx-auto px-6 md:px-12 relative z-10">
-                <div className="mb-24 text-center">
+            <div className="max-w-[1200px] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
+                <div className="mb-16 md:mb-24 text-center">
                     <SectionHeading title="Honours & Achievements" />
                 </div>
 

@@ -47,13 +47,13 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <section className="px-8 py-32 bg-zinc-950">
+    <section className="px-4 md:px-8 py-20 md:py-32 bg-zinc-950">
       <div className="max-w-5xl mx-auto">
         <Reveal>
           <SectionHeading title="Certifications" />
         </Reveal>
 
-        <div className="mt-20 grid md:grid-cols-2 gap-6">
+        <div className="mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {certifications.map((cert, index) => (
             <Reveal key={index} delay={index * 0.15} className="h-full">
               <a
@@ -64,24 +64,24 @@ export default function Certifications() {
               >
                 <div className="absolute inset-0 blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-br ${cert.color}" />
 
-                <div className="relative h-full bg-black rounded-2xl p-8 flex flex-col justify-between overflow-hidden">
+                <div className="relative h-full bg-black rounded-2xl p-6 md:p-8 flex flex-col justify-between overflow-hidden">
                   {/* Background Pattern */}
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.05)_0%,transparent_60%)]" />
 
                   <div className="relative z-10">
-                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4 bg-white/5 text-white/80 border border-white/10 group-hover:bg-white/10 transition-colors`}>
+                    <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-3 md:mb-4 bg-white/5 text-white/80 border border-white/10 group-hover:bg-white/10 transition-colors`}>
                       {cert.issuer}
                     </span>
 
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-white/60 transition-all">
                       {cert.title}
                     </h3>
 
-                    <div className="w-12 h-1 bg-gradient-to-r from-white/20 to-transparent rounded-full mt-4 group-hover:w-full transition-all duration-700 ease-out" />
+                    <div className="w-12 h-1 bg-gradient-to-r from-white/20 to-transparent rounded-full mt-3 md:mt-4 group-hover:w-full transition-all duration-700 ease-out" />
                   </div>
 
-                  <div className="relative z-10 mt-8 flex justify-between items-center">
-                    <span className="text-sm text-white/40 font-mono">
+                  <div className="relative z-10 mt-6 md:mt-8 flex justify-between items-center">
+                    <span className="text-xs sm:text-sm text-white/40 font-mono">
                       {cert.platform}
                     </span>
                     <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/20 transition-colors">

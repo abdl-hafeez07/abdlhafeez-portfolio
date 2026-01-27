@@ -118,7 +118,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative py-32 bg-black" id="projects">
+    <section ref={containerRef} className="relative py-20 md:py-32 bg-black" id="projects">
       {/* Dynamic Background Layer */}
       <div
         ref={bgRef}
@@ -126,12 +126,12 @@ export default function Projects() {
         style={{ backgroundColor: "#000" }}
       />
 
-      <div className="max-w-[1400px] mx-auto px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-4 md:px-8 relative z-10">
         <Reveal>
           <SectionHeading title="Selected Works" />
         </Reveal>
 
-        <div className="mt-20">
+        <div className="mt-12 md:mt-20">
           {projects.map((project, index) => (
             <div
               key={index}

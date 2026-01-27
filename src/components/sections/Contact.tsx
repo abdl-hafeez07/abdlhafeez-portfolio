@@ -129,17 +129,17 @@ function ContactCard({ social }: { social: (typeof socials)[0] }) {
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-8 py-32 bg-black overflow-hidden perspective-1000">
+    <section id="contact" className="px-4 md:px-8 py-20 md:py-32 bg-black overflow-hidden perspective-1000">
       <Reveal>
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16 md:mb-20">
             <SectionHeading title="Get In Touch" />
-            <p className="mt-8 text-white/60 text-lg max-w-2xl mx-auto">
+            <p className="mt-6 md:mt-8 text-white/60 text-base md:text-lg max-w-2xl mx-auto">
               Feel free to reach out for collaborations, opportunities, or just to say hello.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {socials.map((social, index) => (
               <Reveal key={index} delay={index * 0.1}>
                 <ContactCard social={social} />

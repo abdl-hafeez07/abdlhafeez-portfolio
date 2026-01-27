@@ -81,18 +81,18 @@ export default function Skills() {
   };
 
   return (
-    <section className="px-8 py-32 bg-black relative z-10 overflow-visible">
+    <section className="px-4 md:px-8 py-20 md:py-32 bg-black relative z-10 overflow-visible">
       <div className="max-w-[1400px] mx-auto">
         <Reveal>
           <SectionHeading title="Technical Skills" />
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 perspective-[2000px]">
+          <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 perspective-[2000px]">
             {skills.map((skillGroup, index) => (
               <div
                 key={index}
                 onMouseMove={(e) => handleMouseMove(e, index)}
                 onMouseLeave={handleMouseLeave}
-                className="group relative h-full bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md cursor-pointer transition-colors hover:border-white/30"
+                className="group relative h-full bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl backdrop-blur-md cursor-pointer transition-colors hover:border-white/30"
                 style={{ transformStyle: "preserve-3d" }}
               >
                 {/* 3D Content Container */}
@@ -100,15 +100,15 @@ export default function Skills() {
                   {/* Hover Glow Effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl pointer-events-none -z-10 blur-xl" />
 
-                  <h3 className="text-2xl font-bold uppercase tracking-wide mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wide mb-6 md:mb-8 text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
                     {skillGroup.category}
                   </h3>
 
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-2 md:gap-3">
                     {skillGroup.items.map((item) => (
                       <span
                         key={item}
-                        className="px-4 py-2 text-sm font-medium bg-black/40 border border-white/10 hover:border-white/50 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 rounded-lg backdrop-blur-sm shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1"
+                        className="px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm font-medium bg-black/40 border border-white/10 hover:border-white/50 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 rounded-lg backdrop-blur-sm shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-1"
                       >
                         {item}
                       </span>

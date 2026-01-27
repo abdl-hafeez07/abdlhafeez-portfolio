@@ -88,12 +88,12 @@ export default function Hero() {
   }, [isLoading]);
 
   return (
-    <section className="min-h-screen flex items-center px-6 md:px-16 pt-20 md:pt-0">
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12">
-        <div className="relative z-10 mix-blend-difference">
+    <section className="min-h-screen flex items-center px-4 md:px-16 pt-24 md:pt-0">
+      <div className="w-full flex flex-col md:flex-row items-center md:items-center justify-between gap-8 md:gap-12">
+        <div className="relative z-10 mix-blend-difference w-full md:w-auto text-center md:text-left">
           <h1
             ref={titleRef}
-            className="text-[12vw] md:text-[10vw] font-black uppercase leading-[0.85] tracking-tighter opacity-0"
+            className="text-[15vw] sm:text-[12vw] md:text-[10vw] font-black uppercase leading-[0.85] tracking-tighter opacity-0"
             style={{ perspective: "1000px" }}
           >
             <div className="hero-text-3d inline-block">Abdul</div>
@@ -103,14 +103,14 @@ export default function Hero() {
 
           <p
             ref={subtitleRef}
-            className="mt-8 text-xl md:text-2xl text-white/70 max-w-2xl font-light opacity-0"
+            className="mt-6 md:mt-8 text-base sm:text-lg md:text-2xl text-white/70 max-w-2xl font-light opacity-0 mx-auto md:mx-0"
           >
             MSc Computer Science (Data Analytics) Student | Data & ML Enthusiast
           </p>
 
           <div
             ref={buttonRef}
-            className="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 opacity-0"
+            className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 opacity-0 justify-center md:justify-start"
           >
             <MagneticButton label="View Work" />
             <a href="/AbdulHafeezRsm.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
@@ -122,7 +122,7 @@ export default function Hero() {
         {/* Profile Image with Polished Shape & Size */}
         <div
           ref={imageRef}
-          className="relative w-full max-w-sm aspect-[4/5] md:w-[420px] flex justify-center items-center mt-12 md:mt-0 opacity-0"
+          className="relative w-[280px] sm:w-[320px] md:w-[420px] aspect-[4/5] flex justify-center items-center mt-8 md:mt-0 opacity-0"
         >
           {/* Ambient Glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent rounded-[24px] blur-[60px] opacity-20 pointer-events-none" />
@@ -130,9 +130,7 @@ export default function Hero() {
           <div
             className="relative w-full h-full overflow-hidden grayscale hover:grayscale-0 transition-all duration-1000 ease-out"
             style={{
-              // Refined Shape (Reduced Radius)
               borderRadius: "24px",
-              // Soft gradient mask for all sides (Vignette) - Refined for "no edges"
               maskImage: "radial-gradient(ellipse at center, black 30%, transparent 75%)",
               WebkitMaskImage: "radial-gradient(ellipse at center, black 50%, transparent 75%)",
             }}

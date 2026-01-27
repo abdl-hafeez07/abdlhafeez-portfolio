@@ -19,7 +19,7 @@ const socials = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/yourprofile",
+    url: "https://www.linkedin.com/in/abdul-hafeez-523389365",
     handle: "@abdul-hafeez",
     color: "from-blue-600 to-blue-800",
     icon: (
@@ -41,8 +41,8 @@ const socials = [
   },
   {
     name: "Instagram",
-    url: "https://instagram.com",
-    handle: "@instagram",
+    url: "https://www.instagram.com/haffeeeez?igsh=NXF2cnRycDJmZzE%3D&utm_source=qr",
+    handle: "@haffeeeez",
     color: "from-pink-500 to-orange-400",
     icon: (
       <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">

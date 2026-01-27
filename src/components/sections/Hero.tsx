@@ -88,7 +88,7 @@ export default function Hero() {
   }, [isLoading]);
 
   return (
-    <section className="min-h-screen flex items-center px-8 md:px-16">
+    <section className="min-h-screen flex items-center px-6 md:px-16 pt-20 md:pt-0">
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="relative z-10 mix-blend-difference">
           <h1
@@ -110,10 +110,10 @@ export default function Hero() {
 
           <div
             ref={buttonRef}
-            className="mt-12 flex space-x-6 opacity-0"
+            className="mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 opacity-0"
           >
             <MagneticButton label="View Work" />
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <a href="/AbdulHafeezRsm.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
               <MagneticButton label="Resume" />
             </a>
           </div>

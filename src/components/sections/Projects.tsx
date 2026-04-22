@@ -135,23 +135,21 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-card sticky top-[10vh] md:top-[15vh] min-h-[80vh] flex items-center justify-center mb-[15vh] last:mb-0"
+              className="project-card md:sticky md:top-[10vh] lg:top-[15vh] flex items-center justify-center mb-12 md:mb-[15vh] last:mb-0"
               style={{ zIndex: index + 1 }}
             >
 
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex flex-col md:flex-row gap-8 md:gap-16 items-center p-6 md:p-12 rounded-[2rem] md:rounded-[40px] border border-white/10 bg-zinc-950/90 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-[1.01]"
+              <div
+                className="w-full flex flex-col md:flex-row gap-6 md:gap-10 lg:gap-16 items-center p-5 sm:p-8 md:p-10 lg:p-12 rounded-2xl md:rounded-[2.5rem] border border-white/10 bg-zinc-950/90 backdrop-blur-2xl shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-[1.01]"
               >
                 {/* Image Section */}
-                <div className="w-full md:w-3/5 aspect-[16/10] relative group cursor-pointer overflow-hidden rounded-2xl md:rounded-3xl border border-white/5 order-2 md:order-1">
+                <div className="w-full md:w-3/5 aspect-video sm:aspect-[16/10] relative group cursor-pointer overflow-hidden rounded-xl md:rounded-3xl border border-white/5 order-2 md:order-1">
                   <div className="absolute inset-0 bg-zinc-900 transition-transform duration-700 group-hover:scale-105">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 60vw"
                       className={`${project.imageClass} transition-all duration-500 group-hover:scale-110`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -159,29 +157,29 @@ export default function Projects() {
 
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/40 backdrop-blur-[2px]">
-                    <span className="px-6 py-3 rounded-full border border-white/30 text-white uppercase tracking-widest text-xs font-bold bg-white/10 backdrop-blur-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="px-5 py-2.5 rounded-full border border-white/30 text-white uppercase tracking-widest text-xs font-bold bg-white/10 backdrop-blur-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                       View Project
                     </span>
                   </div>
                 </div>
 
                 {/* Text Section */}
-                <div className="w-full md:w-2/5 flex flex-col items-start px-2 order-1 md:order-2">
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="text-4xl md:text-5xl font-black text-white/10 select-none">
+                <div className="w-full md:w-2/5 flex flex-col items-start px-1 sm:px-2 order-1 md:order-2">
+                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                    <span className="text-3xl sm:text-4xl md:text-5xl font-black text-white/10 select-none">
                       0{index + 1}
                     </span>
-                    <div className="h-[1px] w-8 bg-white/20" />
-                    <span className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-white/40">
+                    <div className="h-[1px] w-6 sm:w-8 bg-white/20" />
+                    <span className="text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-white/40">
                       {project.era}
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-5xl font-black uppercase leading-[1.1] tracking-tighter text-white mb-6">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase leading-[1.1] tracking-tighter text-white mb-4 sm:mb-6">
                     <ChromaticText text={project.title} />
                   </h3>
 
-                  <p className="text-white/60 text-base md:text-lg leading-relaxed mb-8">
+                  <p className="text-white/60 text-sm sm:text-base md:text-lg leading-relaxed mb-5 sm:mb-8">
                     {project.description}
                   </p>
 
@@ -189,7 +187,7 @@ export default function Projects() {
                     {project.tech.map((t) => (
                       <span
                         key={t}
-                        className="px-4 py-1.5 text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-white/70 border border-white/10 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
+                        className="px-3 sm:px-4 py-1 sm:py-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-white/70 border border-white/10 rounded-full bg-white/5 hover:bg-white/10 transition-colors"
                       >
                         {t}
                       </span>
@@ -197,7 +195,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-              </a>
+              </div>
             </div>
           ))}
         </div>

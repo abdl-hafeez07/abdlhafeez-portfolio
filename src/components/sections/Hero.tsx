@@ -112,10 +112,19 @@ export default function Hero() {
             ref={buttonRef}
             className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 sm:gap-6 opacity-0 justify-center md:justify-start"
           >
-            <MagneticButton label="View Work" />
-            <a href="/AbdulHafeezRsm.pdf" target="_blank" rel="noopener noreferrer" className="inline-block">
-              <MagneticButton label="Resume" />
-            </a>
+            <MagneticButton
+              label="View Work"
+              onClick={() => {
+                const el = document.getElementById("projects");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
+            />
+            <MagneticButton
+              label="Resume"
+              href="/AbdulHafeezRsm.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
           </div>
         </div>
 

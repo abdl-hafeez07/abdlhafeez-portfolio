@@ -10,15 +10,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    company: "Zodiak Wedding Studio",
-    role: "Freelance Web Developer",
-    period: "2026 - Present",
+    company: "ShadowFox",
+    role: "AI/ML Virtual Intern",
+    period: "May 1 – May 31, 2026",
     year: "2026",
     description:
-      "Architected and deployed high-performance web solutions for a premier wedding fashion studio. Focused on creating a digital presence that mirrors their artisanal craftsmanship through liquid-smooth animations and responsive design.",
-    tech: ["Html", "Css", "Javascript"],
+    "Completed a one-month virtual internship in AI/ML at ShadowFox, applying artificial intelligence and machine learning concepts while demonstrating exceptional performance throughout the program.",
+    tech: ["AI / ML", "Python", "Machine Learning"],
     color: "#3b82f6",
-    link: "https://zodiakweddingstudio.com", // Assumed link, user can update if needed or provided later, keeping consistent with request "goes to the link of the website"
+    link: "/shadowfox-certificate.jpg",
   },
 ];
 

@@ -118,7 +118,7 @@ export default function Leadership() {
                                 </div>
 
                                 {/* Main Content */}
-                                <div className="mt-auto">
+                                <div className="flex-1 flex flex-col">
                                     <h4 className="text-white/40 text-sm font-bold uppercase tracking-widest mb-3">
                                         {item.scope}
                                     </h4>
@@ -130,7 +130,7 @@ export default function Leadership() {
                                     </p>
 
                                     {/* Footer Metric */}
-                                    <div className="pt-8 border-t border-white/5 flex items-center gap-3">
+                                    <div className="mt-auto pt-8 border-t border-white/5 flex items-center gap-3">
                                         <div className={`w-2 h-2 rounded-full animate-pulse bg-gradient-to-r ${item.gradient}`} />
                                         <span className="text-white/80 font-medium tracking-wide">
                                             {item.impact}

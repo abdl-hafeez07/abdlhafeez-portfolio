@@ -12,32 +12,46 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: "Brain Tumor Detection",
-    era: "2025 - AI Research",
-    description: "Deep learning model utilizing CNNs to classify brain tumors from MRI scans.",
-    tech: ["Python", "TensorFlow", "Deep Learning"],
+    title: "HopeConnect",
+    era: "Sep – Oct 2026 - Full-Stack",
+    description:
+      "Community Donation & Distribution System — Developing a full-stack Django web application for donation management, NGO requests, user roles, and donation tracking using Python, Django, and a SQLite/MySQL database.",
+    tech: ["Python", "Django", "SQLite / MySQL"],
+    image: "/projects/hopeconnect.jpg",
+    color: "#10b981", // Emerald
+    link: "#",
+    imageClass: "object-cover opacity-80",
+  },
+  {
+    title: "Global Electricity Transition Analysis",
+    era: "Sep 2026 - Tableau",
+    description:
+      "Analyzed global electricity data (2000–2025) on renewable/fossil generation, energy mix, and carbon intensity by region. Built 15+ Tableau worksheets and 3 dashboards showing renewable energy trends versus GDP and electricity demand.",
+    tech: ["Tableau", "Data Analytics", "Data Viz"],
+    image: "/projects/electricity.jpg",
+    color: "#f59e0b", // Amber
+    link: "#",
+    imageClass: "object-cover opacity-80",
+  },
+  {
+    title: "Brain Tumor Detection from MRI Scans",
+    era: "Feb – Mar 2026 - AI Research",
+    description:
+      "Achieved 98.9% classification accuracy detecting brain tumors from MRI scans by benchmarking CNN, MobileNet, and MobileNetV2, then fine-tuning MobileNetV2 with OpenCV preprocessing (resizing, normalization, and augmentation).",
+    tech: ["Python", "MobileNetV2", "CNN", "OpenCV"],
     image: "/projects/brain.png",
     color: "#2563eb", // Blue
     link: "#",
     imageClass: "object-cover opacity-80",
   },
   {
-    title: "Student Performance",
-    era: "2025 - Analytics",
-    description: "Analytical dashboard uncovering insights from educational datasets.",
-    tech: ["R", "EDA", "Data Viz"],
-    image: "/projects/student.png",
+    title: "Store Sales & Profit Prediction System",
+    era: "May 2025 - ML & Flask",
+    description:
+      "Built an end-to-end retail profit prediction system using XGBoost with RandomizedSearchCV (test R-squared of 0.837 on Superstore Sales) with EDA, feature engineering, and outlier handling. Benchmarked regression models and deployed as a Flask web app on Render.",
+    tech: ["XGBoost", "EDA", "Flask", "Render"],
+    image: "/projects/sales-prediction.jpg",
     color: "#db2777", // Pink
-    link: "#",
-    imageClass: "object-cover opacity-80",
-  },
-  {
-    title: "Online Movie Ticket Booking",
-    era: "2025 - Web Dev",
-    description: "A premium platform for cinematic discoveries and real-time seat reservations with a seamless user experience.",
-    tech: ["PHP", "MySQL", "JavaScript", "CSS"],
-    image: "/projects/movie.png",
-    color: "#059669", // Emerald
     link: "#",
     imageClass: "object-cover opacity-80",
   },
